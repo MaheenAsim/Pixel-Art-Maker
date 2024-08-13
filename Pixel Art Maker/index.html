@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+</head>
+<body>
+    <div id="Instructions">
+        <i class="material-icons">cloud</i>
+        Welcome to the Pixel Art Maker! Choose a color from the palette and click on the cells in the grid to color them. 
+        <i class="material-icons">cloud</i>
+    </div>
+
+    
+    <div id="colorPicker">
+        Palette choice: 
+        <input type="color" id="color">
+    </div>
+    <div id="sizePicker">
+        Use the controls to adjust the grid size: 
+
+        <input type="number" id="gridWidth" placeholder="Width" min="1" max="100">
+        <input type="number" id="gridHeight" placeholder="Height" min="1" max="100">
+        <button onclick="makeGrid()" id = "cleanGrid">
+            Create Grid</button>
+    </div>
+
+    <div id="pixelCanvas"></div>
+    To clear your artwork:
+    <button onclick="clearGrid()" id = "clearGrid">Clear Grid</button>
+    <script src="script.js"></script>
+</body>
+</html>
